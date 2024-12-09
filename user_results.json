@@ -1,0 +1,146 @@
+[
+  {
+    "TestDate": "2024-12-09T19:47:37.1897729+03:00",
+    "SpeedWPM": 38,
+    "TimeElapsed": "00:00:09.5483631",
+    "CorrectCharacters": 31
+  },
+  {
+    "TestDate": "2024-12-09T19:48:37.7904317+03:00",
+    "SpeedWPM": 38,
+    "TimeElapsed": "00:00:11.8623210",
+    "CorrectCharacters": 38
+  },
+  {
+    "TestDate": "2024-12-09T19:49:02.6536625+03:00",
+    "SpeedWPM": 18,
+    "TimeElapsed": "00:00:13.4374410",
+    "CorrectCharacters": 21
+  },
+  {
+    "TestDate": "2024-12-09T19:50:35.764574+03:00",
+    "SpeedWPM": 53,
+    "TimeElapsed": "00:00:08.2810534",
+    "CorrectCharacters": 37
+  },
+  {
+    "TestDate": "2024-12-09T20:08:57.9091213+03:00",
+    "SpeedWPM": 55,
+    "TimeElapsed": "00:00:05.6029301",
+    "CorrectCharacters": 26
+  },
+  {
+    "TestDate": "2024-12-09T20:09:20.5808169+03:00",
+    "SpeedWPM": 59,
+    "TimeElapsed": "00:00:05.2756251",
+    "CorrectCharacters": 26
+  },
+  {
+    "TestDate": "2024-12-09T20:34:42.1912602+03:00",
+    "SpeedWPM": 55,
+    "TimeElapsed": "00:00:05.5971500",
+    "CorrectCharacters": 26
+  },
+  {
+    "TestDate": "2024-12-09T20:41:59.8718455+03:00",
+    "SpeedWPM": 0,
+    "TimeElapsed": "00:00:02.2729620",
+    "CorrectCharacters": 0
+  },
+  {
+    "TestDate": "2024-12-09T20:42:25.1867365+03:00",
+    "SpeedWPM": 48,
+    "TimeElapsed": "00:00:09.3570285",
+    "CorrectCharacters": 38
+  },
+  {
+    "TestDate": "2024-12-09T21:15:55.5761855+03:00",
+    "SpeedWPM": 47,
+    "TimeElapsed": "00:00:18.2928426",
+    "CorrectCharacters": 73
+  },
+  {
+    "TestDate": "2024-12-09T21:19:38.6666271+03:00",
+    "SpeedWPM": 12,
+    "TimeElapsed": "00:00:27.6800158",
+    "CorrectCharacters": 28
+  },
+  {
+    "TestDate": "2024-12-09T21:38:46.3679671+03:00",
+    "SpeedWPM": 48,
+    "TimeElapsed": "00:00:10.0935394",
+    "CorrectCharacters": 41
+  },
+  {
+    "TestDate": "2024-12-10T00:14:25.7423218+03:00",
+    "SpeedWPM": 56,
+    "TimeElapsed": "00:00:15.9621836",
+    "CorrectCharacters": 75
+  },
+  {
+    "TestDate": "2024-12-10T00:14:37.8578734+03:00",
+    "SpeedWPM": 12,
+    "TimeElapsed": "00:00:02.9014103",
+    "CorrectCharacters": 3
+  },
+  {
+    "TestDate": "2024-12-10T00:14:54.4994458+03:00",
+    "SpeedWPM": 16,
+    "TimeElapsed": "00:00:07.4793386",
+    "CorrectCharacters": 10
+  },
+  {
+    "TestDate": "2024-12-10T00:15:21.4334941+03:00",
+    "SpeedWPM": 39,
+    "TimeElapsed": "00:00:22.6565633",
+    "CorrectCharacters": 75
+  },
+  {
+    "TestDate": "2024-12-10T00:25:50.971616+03:00",
+    "SpeedWPM": 61,
+    "TimeElapsed": "00:00:06.5935817",
+    "CorrectCharacters": 34
+  },
+  {
+    "TestDate": "2024-12-10T01:17:55.3162889+03:00",
+    "SpeedWPM": 0,
+    "TimeElapsed": "00:00:01.3487435",
+    "CorrectCharacters": 0
+  },
+  {
+    "TestDate": "2024-12-10T01:18:08.9492781+03:00",
+    "SpeedWPM": 0,
+    "TimeElapsed": "00:00:00.0009815",
+    "CorrectCharacters": 0
+  },
+  {
+    "TestDate": "2024-12-10T01:18:13.8874995+03:00",
+    "SpeedWPM": 0,
+    "TimeElapsed": "00:00:00.0003331",
+    "CorrectCharacters": 0
+  },
+  {
+    "TestDate": "2024-12-10T01:20:21.2078359+03:00",
+    "SpeedWPM": 20,
+    "TimeElapsed": "00:00:01.7906210",
+    "CorrectCharacters": 3
+  },
+  {
+    "TestDate": "2024-12-10T01:35:53.5109333+03:00",
+    "SpeedWPM": 14,
+    "TimeElapsed": "00:00:10.1400782",
+    "CorrectCharacters": 12
+  },
+  {
+    "TestDate": "2024-12-10T01:39:48.7597327+03:00",
+    "SpeedWPM": 1,
+    "TimeElapsed": "00:00:28.3198004",
+    "CorrectCharacters": 4
+  },
+  {
+    "TestDate": "2024-12-10T01:43:55.3730545+03:00",
+    "SpeedWPM": 5,
+    "TimeElapsed": "00:00:02.3499750",
+    "CorrectCharacters": 1
+  }
+]

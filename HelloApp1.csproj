@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\icons\restart.png" />
+    <None Remove="images\keyboardElements\fullKeyboard.png" />
+    <None Remove="images\keyboardElements\leftKeyboard.png" />
+    <None Remove="images\keyboardElements\rightKeyboard.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveCharts.WPF" Version="0.9.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\icons\restart.png" />
+    <Resource Include="images\keyboardElements\fullKeyboard.png" />
+    <Resource Include="images\keyboardElements\leftKeyboard.png" />
+    <Resource Include="images\keyboardElements\rightKeyboard.png" />
+    <Resource Include="images\main-keyboard.png" />
+  </ItemGroup>
+
+</Project>

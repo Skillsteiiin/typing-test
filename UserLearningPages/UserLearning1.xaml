@@ -1,0 +1,71 @@
+﻿<Page x:Class="HelloApp1.UserLearningPages.UserLearning1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HelloApp1.UserLearningPages"
+      mc:Ignorable="d" 
+       d:DesignHeight="550" d:DesignWidth="800"
+      Title="UserLearning1">
+
+    <Page.Resources>
+        <!-- Основной стиль для всех кнопок -->
+        <Style  TargetType="{x:Type Button}">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Специальный стиль для кнопки "ОБУЧЕНИЕ" -->
+        <Style x:Key="LearningButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="30" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="#2D2641">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0" Height="88" Stroke="Black" Fill="#FFF9F9F9" HorizontalAlignment="Stretch"/>
+
+        <Canvas Grid.Row="0" Grid.RowSpan="2">
+            <Button Content="ОБУЧЕНИЕ" Style="{StaticResource LearningButtonStyle}" Canvas.Left="10" Canvas.Top="10" Height="60" Width="198" FontSize="24"/>
+            <Button Content="ПРАКТИКА" Canvas.Left="301" Canvas.Top="14" Height="60" Width="198" FontSize="24" FontWeight="Bold" Click="UserEducation_Click"/>
+            <Button Content="ПРОГРЕСС" Canvas.Left="592" Canvas.Top="14" Height="60" Width="198" FontSize="24" FontWeight="Bold" Click="ProgressButton_Click"/>
+        </Canvas>
+        <TextBlock HorizontalAlignment="Left" Margin="40,20,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Для левой руки" VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,65,0,0" Grid.Row="2" TextWrapping="Wrap" Text="- Указательный палец левой руки отвечает за клавиши A, F и соседние с ними." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,95,0,0" Grid.Row="2" TextWrapping="Wrap" Text="- Средний палец левой руки контролирует клавиши S, D и их соседей." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,125,0,0" Grid.Row="2" TextWrapping="Wrap" Text="- Безымянный палец левой руки нажимает на клавиши W, E и рядом расположенные." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,157,0,0" Grid.Row="2" TextWrapping="Wrap" Text="- Мизинец левой руки работает с клавишей Tab и другими крайними левыми клавишами." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675" RenderTransformOrigin="0.501,0.247"/>
+        <Button Content="ДАЛЬШЕ" Click="GoSecondUserLearning" HorizontalAlignment="Left" Margin="673,389,0,0" Grid.Row="2" VerticalAlignment="Top" Height="34" Width="86"/>
+        <Image Source="../images/keyboardElements/leftKeyboard.png" HorizontalAlignment="Left" Height="224" Margin="101,228,0,0" Grid.Row="1" VerticalAlignment="Top" Width="584"/>
+    </Grid>
+</Page>
