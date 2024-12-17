@@ -13,10 +13,13 @@
     <None Remove="images\keyboardElements\fullKeyboard.png" />
     <None Remove="images\keyboardElements\leftKeyboard.png" />
     <None Remove="images\keyboardElements\rightKeyboard.png" />
+    <None Remove="Views\main-keyboard.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="LiveCharts.WPF" Version="0.9.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +28,7 @@
     <Resource Include="images\keyboardElements\leftKeyboard.png" />
     <Resource Include="images\keyboardElements\rightKeyboard.png" />
     <Resource Include="images\main-keyboard.png" />
+    <Resource Include="Views\main-keyboard.png" />
   </ItemGroup>
 
 </Project>

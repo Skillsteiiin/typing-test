@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using HelloApp1.Views;
+using System.Windows;
 
 namespace HelloApp1
 {

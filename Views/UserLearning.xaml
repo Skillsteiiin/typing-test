@@ -1,4 +1,4 @@
-﻿<Page x:Class="HelloApp1.UserLearning"
+﻿<Page x:Class="HelloApp1.Views.UserLearning"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -56,16 +56,53 @@
         <Rectangle Grid.Row="0" Height="88" Stroke="Black" Fill="#FFF9F9F9" HorizontalAlignment="Stretch"/>
 
         <Canvas Grid.Row="0">
-            <Button Content="ОБУЧЕНИЕ" Style="{StaticResource LearningButtonStyle}" Canvas.Left="10" Canvas.Top="10" Height="60" Width="198" FontSize="24"/>
-            <Button Content="ПРАКТИКА" Canvas.Left="301" Canvas.Top="14" Height="60" Width="198" FontSize="24" FontWeight="Bold" Click="UserEducation_Click"/>
-            <Button Content="ПРОГРЕСС" Canvas.Left="592" Canvas.Top="14" Height="60" Width="198" FontSize="24" FontWeight="Bold" Click="ProgressButton_Click"/>
+            <Button Content="ОБУЧЕНИЕ" 
+                    Style="{StaticResource LearningButtonStyle}" 
+                    Canvas.Left="10" 
+                    Canvas.Top="10" 
+                    Height="60" 
+                    Width="198" 
+                    FontSize="24"
+                    Command="{Binding GoFirstUserLearningCommand }" 
+                    CommandParameter="{Binding NavigationService, RelativeSource={RelativeSource AncestorType=Page}}"/>
+
+            <Button Content="ПРАКТИКА" 
+                    Canvas.Left="301" 
+                    Canvas.Top="14" 
+                    Height="60" 
+                    Width="198" 
+                    FontSize="24" 
+                    FontWeight="Bold" 
+                    Command="{Binding UserEducationCommand }" 
+                    CommandParameter="{Binding NavigationService, RelativeSource={RelativeSource AncestorType=Page}}"/>
+
+            <Button Content="ПРОГРЕСС" 
+                    Canvas.Left="592" 
+                    Canvas.Top="14" 
+                    Height="60" 
+                    Width="198" 
+                    FontSize="24" 
+                    FontWeight="Bold" 
+                    Command="{Binding ProgressButtonCommand}" 
+                    CommandParameter="{Binding NavigationService, RelativeSource={RelativeSource AncestorType=Page}}"/>
         </Canvas>
         <TextBlock HorizontalAlignment="Left" Margin="40,20,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Слепой метод позволяет печатать, не глядя на клавиши, благодаря запоминанию их расположения. Это достигается через регулярные тренировки и освоение правильной техники." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="40,83,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Для начала важно запомнить правильное положение рук:" VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675"/>
         <TextBlock HorizontalAlignment="Left" Margin="40,122,0,0" Grid.Row="1" TextWrapping="Wrap" Text="- Левая рука должна находиться над клавишами A, S, D, F." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675"/>
         <TextBlock HorizontalAlignment="Left" Margin="40,151,0,0" Grid.Row="1" TextWrapping="Wrap" Text="- Правая рука – над клавишами J, K, L," VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675"/>
+        
         <TextBlock HorizontalAlignment="Left" Margin="40,181,0,0" Grid.Row="1" TextWrapping="Wrap" Text="- Большие пальцы обеих рук должны лежать на пробеле." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675"/>
-        <Button Content="ДАЛЬШЕ" Click="GoFirstUserLearning" HorizontalAlignment="Left" Margin="673,389,0,0" Grid.Row="1" VerticalAlignment="Top" Height="34" Width="86"/>
+
+        <Button Content="ДАЛЬШЕ" 
+                Command="{Binding PushUserLearningCommand }" 
+                CommandParameter="{Binding NavigationService, RelativeSource={RelativeSource AncestorType=Page}}" 
+                HorizontalAlignment="Left" 
+                Margin="673,389,0,0" 
+                Grid.Row="1" 
+                VerticalAlignment="Top" 
+                Height="34" 
+                Width="86"/>
+        
         <Image Source="images/keyboardElements/fullKeyboard.png" HorizontalAlignment="Left" Height="224" Margin="101,228,0,0" Grid.Row="1" VerticalAlignment="Top" Width="584"/>
     </Grid>
 </Page>

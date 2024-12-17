@@ -1,9 +1,9 @@
-﻿<Page x:Class="HelloApp1.UserLearningPages.UserLearning2"
+﻿<Page x:Class="HelloApp1.Views.UserLearning2"
            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:HelloApp1.UserLearningPages"
+      xmlns:local="clr-namespace:HelloApp1.Views"
       mc:Ignorable="d" 
       d:DesignHeight="550" d:DesignWidth="800"
       Title="UserLearning1">
@@ -57,15 +57,43 @@
 
         <Canvas Grid.Row="0">
             <Button Content="ОБУЧЕНИЕ" Style="{StaticResource LearningButtonStyle}" Canvas.Left="10" Canvas.Top="10" Height="60" Width="198" FontSize="24"/>
-            <Button Content="ПРАКТИКА" Canvas.Left="301" Canvas.Top="14" Height="60" Width="198" FontSize="24" FontWeight="Bold" Click="UserEducation_Click"/>
-            <Button Content="ПРОГРЕСС" Canvas.Left="592" Canvas.Top="14" Height="60" Width="198" FontSize="24" FontWeight="Bold" Click="ProgressButton_Click"/>
+            <Button Content="ПРАКТИКА" 
+Canvas.Left="301" 
+Canvas.Top="14" 
+Height="60" 
+Width="198" 
+FontSize="24" 
+FontWeight="Bold" 
+Command="{Binding UserEducationCommand }" 
+CommandParameter="{Binding NavigationService, RelativeSource={RelativeSource AncestorType=Page}}"/>
+
+            <Button Content="ПРОГРЕСС" 
+Canvas.Left="592" 
+Canvas.Top="14" 
+Height="60" 
+Width="198" 
+FontSize="24" 
+FontWeight="Bold" 
+Command="{Binding ProgressButtonCommand}" 
+CommandParameter="{Binding NavigationService, RelativeSource={RelativeSource AncestorType=Page}}"/>
         </Canvas>
         <TextBlock HorizontalAlignment="Left" Margin="40,20,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Для правой руки" VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="40,65,0,0" Grid.Row="1" TextWrapping="Wrap" Text="- Указательный палец правой руки управляет клавишами J, K и окружающими их." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675"/>
         <TextBlock HorizontalAlignment="Left" Margin="40,95,0,0" Grid.Row="1" TextWrapping="Wrap" Text="- Средний палец правой руки ответственен за нажатия на клавиши L, ; и другие близкие к ним." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675"/>
         <TextBlock HorizontalAlignment="Left" Margin="40,125,0,0" Grid.Row="1" TextWrapping="Wrap" Text="- Безымянный палец правой руки используется для клавиш O, I и других расположенных справа от них." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="30" Width="675"/>
+      
         <TextBlock HorizontalAlignment="Left" Margin="40,157,0,0" Grid.Row="1" TextWrapping="Wrap" Text="- Мизинец правой руки занимается клавишей Shift (правый), а также другими правосторонними клавишами, такими как Enter и Backspace." VerticalAlignment="Top" Foreground="#FFEBEBEB" FontSize="16" Height="53" Width="676" RenderTransformOrigin="0.501,0.247"/>
-        <Button Content="ДАЛЬШЕ" Click="GoToUserPractise" HorizontalAlignment="Left" Margin="673,389,0,0" Grid.Row="1" VerticalAlignment="Top" Height="34" Width="86"/>
+
+        <Button Content="ПРАКТИКА" 
+HorizontalAlignment="Left" 
+Margin="673,389,0,0" 
+Grid.Row="1" 
+VerticalAlignment="Top" 
+Height="34" 
+Width="86"
+Command="{Binding UserEducationCommand }" 
+CommandParameter="{Binding NavigationService, RelativeSource={RelativeSource AncestorType=Page}}"/>
+        
         <Image Source="../images/keyboardElements/rightKeyboard.png" HorizontalAlignment="Left" Height="224" Margin="101,228,0,0" Grid.Row="1" VerticalAlignment="Top" Width="584"/>
     </Grid>
 </Page>
